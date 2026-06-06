@@ -1,0 +1,33 @@
+{
+  "seed": 42,
+  "hardware": "Google Colab T4 GPU",
+  "training_time_minutes": 15,
+  "model": "ResNet18 (ImageNet pretrained)",
+  "dataset": "GTZAN",
+  "split": {
+    "train": 689,
+    "val": 150,
+    "test": 160
+  },
+  "results": {
+    "svm_baseline_test_accuracy": 0.74,
+    "resnet18_val_accuracy": 0.7533,
+    "resnet18_test_accuracy": 0.6687
+  },
+  "ablations": {
+    "phase1_only_val_accuracy": 0.487,
+    "phase1_plus_phase2_val_accuracy": 0.753
+  },
+  "per_class_f1": {
+    "blues": 0.59,
+    "classical": 0.94,
+    "country": 0.68,
+    "disco": 0.47,
+    "hiphop": 0.69,
+    "jazz": 0.8,
+    "metal": 0.88,
+    "pop": 0.67,
+    "reggae": 0.56,
+    "rock": 0.39
+  }
+}

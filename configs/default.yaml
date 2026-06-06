@@ -1,0 +1,28 @@
+# TensorTunes — Default Hyperparameters
+seed: 42
+
+data:
+  spectro_path: ./gtzan/spectrograms
+  sample_rate: 22050
+  duration: 3
+  n_mels: 128
+  hop_length: 512
+  batch_size: 32
+  num_workers: 2
+
+model:
+  num_classes: 10
+  dropout: 0.3
+  hidden_dim: 256
+
+training:
+  phase1_epochs: 10
+  phase2_epochs: 15
+  phase1_lr: 0.001
+  phase2_lr: 0.0001
+  scheduler_step: 5
+  scheduler_gamma: 0.5
+
+paths:
+  checkpoint: checkpoints/best.pt
+  results: results/metrics.json
