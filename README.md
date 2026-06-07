@@ -31,7 +31,11 @@ python preprocess.py
 ```bash
 python evaluate.py
 ```
-
+## Running the demo
+```bash
+python demo.py --checkpoint checkpoints/best.pt
+```
+Opens a local Gradio interface — upload any .wav or .mp3 file to predict its genre.
 ## Hardware
 - Trained on Google Colab (T4 GPU)
 - Training time : ~15 minutes
